@@ -5,7 +5,7 @@ The AWS account requires access to Athena and the staging dir where intermediary
 # Running script inline:
 
 ```
-docker run --rm athena-workbench \
+docker run --rm vladnem/athena-workbench \
 	-url=jdbc:awsathena://athena.<athena region>.amazonaws.com:443 \
 	-connectionProperties='s3_staging_dir=s3://<staging bucket>' \
 	-username=<AWS Access Key> \
@@ -16,7 +16,7 @@ docker run --rm athena-workbench \
 # Running scripts in external files:
 
 ```
- docker run --rm athena-workbench \
+ docker run --rm vladnem/athena-workbench \
 	-url=jdbc:awsathena://athena.<athena region>.amazonaws.com:443 \
 	-connectionProperties='s3_staging_dir=s3://<staging bucket>' \
 	-username=<AWS Access Key> \
