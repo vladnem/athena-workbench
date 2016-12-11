@@ -14,5 +14,4 @@ ENTRYPOINT ["java", \
 	"-jar", "sqlworkbench.jar", \
 	"-driver=com.amazonaws.athena.jdbc.AthenaDriver", \
 	"-driverjar=/var/driver/athena.jar", \
-	"-displayResult=true", \
-	"-showTiming=true"]
+	"-displayResult=true"]
